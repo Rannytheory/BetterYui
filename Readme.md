@@ -15,8 +15,10 @@ Command list:
 ```
 // To compile:
 npm run build
+
 // Running in dev mode:
 npm run dev
+
 // Starting the bot:
 npm start
 ```
