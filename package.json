@@ -1,0 +1,23 @@
+{
+  "name": "betteryui",
+  "version": "1.0.0",
+  "description": "A better discord bot than Yui",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon ./dist/app.js",
+    "build": "./node_modules/typescript/bin/tsc",
+    "dev": "npm run build && nodemon ./dist/app.js",
+    "start": "npm run build && NODE_ENV=production node ./dist/app.js"
+  },
+  "author": "Gim949",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.4",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.4000"
+  }
+}
