@@ -13,6 +13,6 @@ export = class Ping extends Command
     {
         msg.channel.send("Pinging...")
         .then((edit: Message | Message[]) => (edit as Message)
-        .edit(`Wow, your ping is \`${Math.round((edit as Message).createdTimestamp - msg.createdTimestamp).toFixed(2)}ms\``));
+        .edit(`Wow, you think you're cool? I'm not gonna tell you that the ping is \`${Math.round((edit as Message).createdTimestamp - msg.createdTimestamp).toFixed(2)}ms\``));
     }
 }

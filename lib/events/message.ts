@@ -4,6 +4,8 @@ import { Message } from "discord.js";
 export = (bot: Bot, msg: Message) => {
     if(msg.author.bot) return;
 
+    console.log(msg.content);
+    
     const prefixRegex = new RegExp(`^(<@!?${bot.user.id}>\\s*|${Bot.prefix})`);
     if(!prefixRegex.test(msg.content)) return;
 
